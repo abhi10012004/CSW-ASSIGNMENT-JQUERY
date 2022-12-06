@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <form name="FName">
+        <label>Name</label>
+        <input type="text" name="name">
+        <br><br>
+        <label>Email</label>
+        <input type="email" name="email">
+        <br><br>
+        <button id="btn">Submit</button>
+    </form>
+    
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script >$("#btn").click(function (){
+        var a = document.forms["FName"]["name"].value;
+        var b = document.forms["FName"]["email"].value;
+        if (a == ""){
+            alert("Please Enter Your Correct Name");
+        }
+    
+        if (b == ""){
+            alert("Please Enter Your Correct Email");
+        }
+    
+    });</script>
+</body>
+</html>

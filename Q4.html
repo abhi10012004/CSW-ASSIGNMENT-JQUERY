@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+
+    function p(){
+        var answer = prompt('Do you want to submit?');
+        if(answer == "yes"){
+            $("#p").text("Welcome");
+        }
+        else{
+            $("#p").text("Chala Ja");
+        }
+        
+    }
+    </script>
+<body>
+    <div class="container">
+        <div>
+            <label>Username:</label>
+            <input type="text" size="40">
+        </div>
+        <div>
+            <label>Phone no:</label>
+            <input type="text" id="number" size="40">
+            <span id="error"></span>
+        </div>
+        <button type="submit" onclick="p()">
+           Submit
+        </button>
+        <p id="p"></p>
+    </div>
+    
+    
+</body>
+</html>
